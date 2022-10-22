@@ -1,0 +1,16 @@
+body {
+	margin: 0px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#ovrflw {
+	overflow: hidden;
+	position: relative;
+}
+
+#header {
+	margin-top: 50px;
+	margin-left: 175px;
+	transform: translate(0%, -50%);
+	text-align: center;
+}
