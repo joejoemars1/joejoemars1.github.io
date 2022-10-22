@@ -3,14 +3,13 @@ body {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#ovrflw {
-	overflow: hidden;
-	position: relative;
+#header {
+	padding-top: 25px;
+	padding-left: 2.5%;
 }
 
-#header {
-	margin-top: 50px;
-	margin-left: 175px;
-	transform: translate(0%, -50%);
-	text-align: center;
+#description {
+	padding-left: 5%;
+	max-width: 100%;
+	padding-right: 5%
 }
