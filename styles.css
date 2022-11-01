@@ -1,15 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Karla:wght@500&family=Oxygen&display=swap');
+
+:root {
+	--background-color: #011627;
+	--background-color-light: hsl(207, 95%, 12%);
+	--accent-color: #e5446d;
+	--text-color: #fbfbff;
+}
+
 body {
-	margin: 0px;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	background-color: var(--background-color);
+	margin: 0;
 }
 
-#header {
-	padding-top: 25px;
-	padding-left: 2.5%;
+footer {
+	background-color: var(--background-color-light);
+	min-height: 10vh;
+	text-align: center;
+
+	color: var(--text-color);;
+	font-family: 'Hind Madurai', sans-serif;
+	font-size: 1.5rem;
 }
 
-#description {
-	padding-left: 5%;
-	max-width: 100%;
-	padding-right: 5%
+a {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#main {
+	min-height: 90vh;
+	flex-direction: column;
+	display: flex;
+	flex: 1;
+	word-wrap: break-word;
+}
+
+.title {
+	color: var(--text-color);
+	font-family: 'Karla', sans-serif;
+	font-size: 4rem;
+	text-align: center;
+	box-shadow: 0px 40px 0px -35px var(--accent-color);
+}
+
+.subtitle {
+	color: var(--text-color);;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 2.5rem;
+	margin-top: 1%;
+	margin-left: 5%;
+	text-align: initial;
+}
+
+.content {
+	color: var(--text-color);;
+	font-family: 'Hind Madurai', sans-serif;
+	font-size: 1.25rem;
+	text-align: justify;
+	margin-bottom: 2%;
+	margin-left: 2%;
+	margin-right: 6%;
 }
