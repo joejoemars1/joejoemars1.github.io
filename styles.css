@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Karla:wght@500&family=Oxygen&display=swap');
+
+:root {
+	--light-background-color: white;
+	--light-background-color-2: rgb(245,245,245);
+	--light-text-color: black;
+
+	--dark-background-color: black;
+	--dark-background-color-2: rgb(10,10,10);
+	--dark-text-color: white;
+
+	--accent-color-red: rgb(226, 53, 105);
+}
+
+@media (prefers-color-scheme: light) {
+
+	body {
+		background: var(--light-background-color);
+	}
+
+	a, p {
+		color: var(--light-text-color);
+	}
+
+	.projects-page-flex-item {
+		background-color: var(--light-background-color-2);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+
+	body {
+		background: var(--dark-background-color);
+	}
+
+	a, p {
+		color: var(--dark-text-color);
+	}
+
+	.projects-page-flex-item {
+		background-color: var(--dark-background-color-2);
+	}
+
+}
+
+a, p {
+	font-family: 'Hind Madurai', sans-serif;
+}
+
+#dog {
+	width: 50%;
+	height: 50%;
+	object-fit: contain;
+	position: absolute;
+	align-content: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	image-rendering: pixelated;
+}
+
+.extra-text {
+	display: flex;
+	justify-content: center;
+}
+
+.projects-page-flex-item-header {
+	margin: 15px;
+	margin-bottom: -15px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.projects-page-flex-item-content {
+	margin: 15px;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.material-symbols-outlined {
+	text-decoration-color: var(--accent-color-red);
+}
+
+.projects-page-flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.projects-page-flex-item {
+	margin: 10px;
+	width: 250px;
+	height: 250px;
+	border-radius: 2.5%;
+	text-decoration: none	;
+}
+
+.home-page-grid-container {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 25px;
+	position: absolute;
+	align-content: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.home-page-grid-item {
+	text-align: center;
+	font-size: 24px;
+	text-decoration-color: var(--accent-color-red);
+}
